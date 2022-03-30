@@ -1,0 +1,39 @@
+<%- include('header'); -%>
+
+    <div class='content'>
+        <form action="/api/register" method="post">
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" name="username" placeholder="Masson" required autofocus><br>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" name="passwsord" placeholder="********" required><br>
+            <label for="society">Society:</label>
+            <br>
+            <input type="text" name="society" placeholder="Frends of animals" required><br>
+            <label for="contact">Contact:</label>
+            <br>
+            <input type="text" name="contact" placeholder="Paul Masson" required><br>
+            <label for="address">Address:</label>
+            <br>
+            <input type="text" name="address" placeholder="13, place Napoleon Bonaparte" required><br>
+            <label for="zipcode">Zipcode:</label>
+            <br>
+            <input type="text" name="zipcode" placeholder="77300" required><br>
+            <label for="city">City:</label>
+            <br>
+            <input type="text" name="city" placeholder="FONTAINEBLEAU" required><br>
+            <label for="phone">Phone:</label>
+            <br>
+            <input type="text" name="phone" placeholder="01 45 56 67 78" required><br>
+            <label for="fax">Fax number:</label>
+            <br>
+            <input type="text" name="fax" placeholder="01 45 56 67 80" required><br>
+            <label for="max_outstanding">Maximum Outstanding:</label>
+            <br>
+            <input type="text" name="max_outstanding" placeholder="250000" required><br>
+            <button type="submit">Register</button><br>
+        </form>
+    </div>
+
+    <%- include('footer'); -%>
